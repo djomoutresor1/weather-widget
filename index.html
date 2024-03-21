@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meteo Widget</title>
+    <link rel="stylesheet" type="text/css" href="./dist/style.min.css">
+</head>
+<body>
+    <div id="app" class="weather-widget">
+        <h2 id="cityName" class="city"></h2>
+        <b id="temperature"></b>
+        Temperature Max:<b id="temperatureMin"></b>
+        Temperature Min:<b id="temperatureMax"></b>
+        <b id="description"></b>
+        <img id="weatherIcon" src="" alt="Icon meteo">
+    </div>
+    <div class="button-style">
+        <button id="prevButton" onclick="window.previousCity()">Preview City</button>
+        <button id="nextButton" onclick="window.nextCity()">Nexy City</button>
+    </div>
+    <script type="application/javascript" src="dist/main.js"></script>
+</body>
+</html>

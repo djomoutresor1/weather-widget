@@ -1,0 +1,3 @@
+# per ignorare i file quando viene pushato i codici sui ripositories
+node_modules/
+dist/

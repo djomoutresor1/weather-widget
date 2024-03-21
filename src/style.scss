@@ -1,0 +1,53 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  @include flex-center;
+  flex-direction: column;
+  background-size: 100% 100%;
+}
+
+.weather-widget {
+  @include flex-center;
+  flex-direction: row;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.weather-widget > * {
+  margin: 0 10px;
+}
+
+
+
+.button-style {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+}
+
+#prevButton {
+  margin-left: 10px; 
+}
+
+#nextButton {
+  margin-right: 10px; 
+}
+
+
+@media (max-width: 600px) {
+  body, html {
+    flex-direction: column;
+  }
+  .weather-widget {
+    flex-direction: column;
+  }
+}
