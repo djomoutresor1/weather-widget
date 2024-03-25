@@ -10,8 +10,11 @@ body, html {
   height: 100%;
   @include flex-center;
   flex-direction: column;
-  background-size: 100% 100%;
+  background-size: cover; // ensures the background image covers the entire container
+  background-repeat: no-repeat; // prevents the background image from repeating
+  background-position: center; // centers the background image
 }
+
 
 .weather-widget {
   @include flex-center;
